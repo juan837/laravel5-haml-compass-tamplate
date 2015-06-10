@@ -1,0 +1,15 @@
+@mixin imagen-fondo($url, $ancho, $alto){
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: $ancho $alto;
+	background-position: center;
+}
+
+@mixin btn-slider($bgc, $color, $w, $h, $fz, $padng-top){
+	background-color: $bgc !important;
+	color: $color;
+	width: $w !important;
+	height: $h !important;
+	font-size: $fz !important;
+	padding-top: $padng-top;
+}

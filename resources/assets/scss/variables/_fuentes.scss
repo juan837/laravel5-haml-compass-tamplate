@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+@font-face {
+    font-family: "museo 300";
+    src: url('../fonts/museo300regular.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo 500";
+    src: url('../fonts/museo500regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo 700";
+    src: url('../fonts/museo700.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+$font-site: 'Questrial', sans-serif;
+$font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-museo-300: "museo 300", arial, sans-serif;
+$font-museo-500: "museo 500", arial, sans-serif;
+$font-museo-700: "museo 700", arial, sans-serif;
+
+//HEADER
+$font-size-link-navbar: 18px;
+
+//SLIDER
+$font-size-btn-slider: 16px;
+
+$font-size-p: 16px;
+
+

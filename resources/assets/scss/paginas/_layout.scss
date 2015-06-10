@@ -1,0 +1,104 @@
+p{
+	font-family: $font-site;
+	font-size: $font-size-p;
+}
+
+body{
+	//background-color: red;
+}
+
+body{
+	header{
+		.navbar{
+		  	z-index: 10000;
+			background-color: $header-bgc;
+		}
+		//@include region-basica(100%,$layout-header-height,$header-bgc);
+		.logo-biosoft{
+			//background-color: red;
+			margin-top: 15px;
+			margin-left: 15%;
+			float: left;
+			//@include imagen-fondo('../images/layout/logo_header.png',326px,121px);
+		}
+
+		
+		.navbar-nav{
+			float: right;
+			margin-top: 30px;
+			ul{
+				li{
+					a{
+						font-family: $font-site;
+						font-size: $font-size-link-navbar;
+						color: $header-navbar-link-color !important;
+
+						// $screen-md-min = 768px Y $screen-md-max = 1199px
+						@media (min-width:  $screen-sm-min) and  (max-width: $screen-md-max) {
+						  padding-top: 29px !important;
+						  padding-bottom: 0 !important;
+						}
+					}
+				}
+			}
+			// $screen-xs-max = 767px 
+			@media (max-width: $screen-xs-max){
+				float: left;
+				margin-top: 0;
+			}
+			// $screen-md-min = 768px Y $screen-md-max = 1199px
+			@media (min-width:  $screen-sm-min) and  (max-width: $screen-md-max) {
+				float: right;
+				margin-top: 20px;
+			}
+		}
+	}
+  	.wrap-otra{
+	  margin-top: 84px;
+	  // $screen-xs-max = 767px
+	  @media (max-width: $screen-xs-max){
+		margin-top: 150px;
+	  }
+	  // $screen-md-min = 768px Y $screen-md-max = 1199px
+	  @media (min-width:  $screen-sm-min) and  (max-width: $screen-md-max) {
+		margin-top: 155px;
+	  }
+	}
+	footer{
+		width: 100%;
+		height: $footer-height;
+		background-color: $footer-bgc;
+	  	// $screen-xs-max = 767px
+		@media (max-width: $screen-xs-max){
+		  height: $footer-height-movil;
+		}
+		// $screen-md-min = 768px Y $screen-md-max = 1199px
+		@media (min-width:  $screen-sm-min) and  (max-width: $screen-md-max) {
+		  height: $footer-height-table;
+		}
+		.container{
+			.row{
+				#footer-logo{
+					//width: 109px;
+					height: 52px;
+//					@include imagen-fondo('../images/layout/footer_logo.png',109px,52px);
+				}
+				#derechos{
+					p{
+						margin-top: 15px;
+						color: $footer-right-color;
+						// $screen-xs-max = 767px
+						@media (max-width: $screen-xs-max){
+						  font-size: 14px !important;
+						  text-align: center;
+						}
+						// $screen-md-min = 768px Y $screen-md-max = 1199px
+						@media (min-width:  $screen-sm-min) and  (max-width: $screen-md-max) {
+						  height: $footer-height-table;
+						}
+					}
+				}
+			}
+		}
+	}
+}
